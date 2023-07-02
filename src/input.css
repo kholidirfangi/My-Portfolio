@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background-image: linear-gradient(45deg, rgb(34 211 238), #2563eb);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: 0.4s;
+}
+
+.nav-line:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-line:hover {
+  color: rgb(34 211 238);
+}
+
+.active {
+  color: rgb(34 211 238) !important;
+}
