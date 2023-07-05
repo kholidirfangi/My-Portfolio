@@ -35,7 +35,7 @@ menu.addEventListener('click', () => {
   const menuMobile = document.querySelector('#menuMobile');
 
   menu.classList.add('hidden');
-  menuMobile.classList.remove('-ms-72');
+  menuMobile.classList.remove('-ms-72', 'md:-ms-[600px]');
   menuMobile.classList.add('ms-0');
 });
 
@@ -49,7 +49,7 @@ closed.addEventListener('click', () => {
   }, 300);
 
   menuMobile.classList.remove('ms-0');
-  menuMobile.classList.add('-ms-72');
+  menuMobile.classList.add('-ms-72', 'md:-ms-[600px]');
 });
 
 // handle form submit
