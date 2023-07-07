@@ -64,3 +64,34 @@ submit.addEventListener('click', () => {
   );
   result ? result.focus() : alert('Please allow popups for this website');
 });
+
+// gsap
+gsap.from('.hero', {
+  y: -100,
+  duration: 2,
+  opacity: 0,
+  ease: 'bounce',
+});
+
+gsap.from('.text', {
+  y: -100,
+  duration: 2,
+  opacity: 0,
+  ease: 'bounce',
+});
+
+// AOS
+
+const skills = document.querySelectorAll('.skill');
+skills.forEach((skill, i) => {
+  skill.dataset.aos = 'fade-down';
+  skill.dataset.aosDelay = i * 100;
+});
+
+AOS.init({
+  duration: 400,
+  once: true,
+});
+
+
+
