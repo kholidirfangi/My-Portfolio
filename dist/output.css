@@ -2894,8 +2894,20 @@ body {
     width: 100%;
   }
 
+  .lg\:max-w-0 {
+    max-width: 0rem;
+  }
+
   .lg\:max-w-full {
     max-width: 100%;
+  }
+
+  .lg\:max-w-2xl {
+    max-width: 42rem;
+  }
+
+  .lg\:max-w-none {
+    max-width: none;
   }
 
   .lg\:flex-row {
