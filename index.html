@@ -20,7 +20,7 @@
       class="lg:fixed bg-white z-50 right-0 lg:left-0 lg:top-0 lg:py-5 lg:px-10"
     >
       <div
-        class="menu absolute lg:hidden p-3 md:p-4 hover:bg-cyan-400 rounded-sm"
+        class="menu absolute lg:hidden p-3 md:p-4 hover:bg-cyan-400 rounded-sm cursor-pointer z-50"
       >
         <i class="fa-solid fa-bars fa-2xl"></i>
       </div>
@@ -34,7 +34,7 @@
           <i class="fa-solid fa-xmark fa-2xl"></i>
         </div>
         <p
-          class="font-bold text-cyan-400 text-center py-2 md:text-xl lg:py-0 lg:text-start lg:block lg:text-2xl"
+          class="font-bold text-cyan-400 text-center py-2 md:text-xl lg:py-0 lg:text-start lg:block lg:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600"
         >
           Kholid Irfangi
         </p>
@@ -73,13 +73,13 @@
     <main>
       <section
         id="home"
-        class="w-full lg:py-40 flex lg:flex-row-reverse flex-col items-center justify-center min-h-screen py-20"
+        class="w-full relative lg:py-40 flex lg:flex-row-reverse flex-col items-center justify-center min-h-screen py-20"
       >
-        <div class="hero relative w-full lg:w-1/2 flex justify-center">
+        <div class="hero w-full lg:w-1/2 flex justify-center">
           <img
             src="images/kholid_irfangi.png"
             alt="Kholid Irfangi"
-            class="rounded-full w-48 md:w-52 lg:w-72 h-auto border-4 border-cyan-400 bg-gradient-to-r from-blue-600 to-cyan-400"
+            class="rounded-full w-48 md:w-52 lg:w-72 h-auto bg-gradient-to-r from-blue-600 to-cyan-400"
           />
         </div>
         <div
@@ -144,7 +144,7 @@
           viewBox="0 0 1440 320"
         >
           <path
-            fill="#22d3ee"
+            fill="#334155"
             fill-opacity="1"
             d="M0,0L20,10.7C40,21,80,43,120,64C160,85,200,107,240,128C280,149,320,171,360,170.7C400,171,440,149,480,149.3C520,149,560,171,600,192C640,213,680,235,720,213.3C760,192,800,128,840,96C880,64,920,64,960,85.3C1000,107,1040,149,1080,186.7C1120,224,1160,256,1200,245.3C1240,235,1280,181,1320,154.7C1360,128,1400,128,1420,128L1440,128L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"
           ></path>
@@ -152,10 +152,14 @@
       </section>
       <section id="about" class="bg-slate-700 px-5 py-10 lg:py-24">
         <div class="mx-auto" data-aos="fade-down" data-aos-duration="800">
-          <h1 class="mb-12 text-2xl font-bold text-center text-cyan-400">
+          <h1
+            class="mb-12 text-2xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600"
+          >
             About Me
           </h1>
-          <div class="flex flex-col lg:flex-row justify-center mx-auto md:max-w-xl lg:max-w-none">
+          <div
+            class="flex flex-col lg:flex-row justify-center mx-auto md:max-w-xl lg:max-w-none"
+          >
             <div class="mx-10 max-w-xl">
               <p class="text-slate-400 lg:text-xl indent-6 text-justify">
                 Hello there! I'm Kholid Irfangi, a passionate Frontend Web
@@ -164,35 +168,10 @@
                 technical background, I strive to craft seamless digital
                 experiences that leave a lasting impression on users.
               </p>
-              <h3 class="lg:text-xl mb-5 mt-10 font-semibold text-slate-300">
-                My Journey in Web Development
-              </h3>
-              <p class="text-slate-400 lg:text-xl text-justify">
-                My journey in web development began several years ago when I
-                stumbled upon the fascinating world of coding and design. From
-                that moment, I knew I had found my calling. I embarked on a
-                quest to learn everything I could about HTML, CSS, and
-                JavaScript, honing my skills through online courses, personal
-                projects, and collaboration with fellow developers.
-              </p>
             </div>
-            <div class="mx-10 max-w-xl">
-              <h3
-                class="lg:text-xl mb-5 mt-10 lg:mt-0 font-semibold text-slate-300"
-              >
-                My Approach to Development
-              </h3>
-              <p class="text-slate-400 lg:text-xl text-justify">
-                In each project I undertake, my goal is to not only meet but
-                exceed expectations. I combine my technical expertise with a
-                user-centered approach, striving to understand the target
-                audience and designing interfaces that are intuitive and
-                delightful to use. I am a strong advocate for web accessibility,
-                making sure that my websites are inclusive and usable by
-                everyone.
-              </p>
 
-              <h3 class="lg:text-xl mb-5 mt-10 font-semibold text-slate-300">
+            <div class="mx-10 max-w-xl">
+              <h3 class="lg:text-xl mb-5 font-semibold text-slate-300">
                 Continuous Learning
               </h3>
               <p class="text-slate-400 lg:text-xl text-justify">
@@ -206,7 +185,9 @@
         </div>
       </section>
       <section id="myskills" class="px-5 py-10 lg:py-24">
-        <h2 class="mb-6 lg:mb-12 text-2xl font-bold text-center text-cyan-400">
+        <h2
+          class="mb-6 lg:mb-12 text-2xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600"
+        >
           My Skills
         </h2>
         <div
@@ -234,7 +215,7 @@
           </div>
           <div class="skill flex flex-col items-center w-24 py-2 lg:px-5">
             <img src="images/icon/react.svg" alt="ReactJS" />
-            <p>ReactJS</p>
+            <p>React</p>
           </div>
           <div class="skill flex flex-col items-center w-24 py-2 lg:px-5">
             <img src="images/icon/git.svg" alt="GIT" />
@@ -243,7 +224,9 @@
         </div>
       </section>
       <section id="myproject" class="bg-slate-700 px-5 py-10 lg:py-24">
-        <h2 class="mb-10 text-2xl font-bold text-center text-cyan-400">
+        <h2
+          class="mb-10 text-2xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600"
+        >
           My Projects
         </h2>
         <div
@@ -258,7 +241,7 @@
               <img
                 src="images/news.png"
                 alt="News homepage"
-                class="rounded-sm lg:h-72 hover:scale-110 transition duration-200"
+                class="rounded-sm object-cover hover:scale-110 transition duration-200"
               />
             </div>
             <p class="max-w-md mx-auto text-slate-400 md:text-lg">
@@ -274,7 +257,7 @@
               <img
                 src="images/intro-section-with-dropdown-desktop.png"
                 alt="Intro section with dropdown navigation"
-                class="rounded-sm lg:h-72 hover:scale-110 transition duration-200"
+                class="rounded-sm object-cover hover:scale-110 transition duration-200"
               />
             </div>
             <p class="max-w-md mx-auto text-slate-400 md:text-lg">
@@ -290,7 +273,7 @@
               <img
                 src="images/tip-calc-desktop.png"
                 alt="Tip calculator app"
-                class="rounded-sm lg:h-72 hover:scale-110 transition duration-200"
+                class="rounded-sm object-cover hover:scale-110 transition duration-200"
               />
             </div>
             <p class="max-w-md mx-auto text-slate-400 md:text-lg">
@@ -300,7 +283,9 @@
         </div>
       </section>
       <section id="certificate" class="px-5 py-10 lg:py-24">
-        <h2 class="mb-6 lg:mb-12 text-2xl font-bold text-center text-cyan-400">
+        <h2
+          class="mb-6 lg:mb-12 text-2xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600"
+        >
           Certificate
         </h2>
         <div
@@ -331,7 +316,9 @@
         </div>
       </section>
       <section id="contact" class="bg-slate-700 px-5 py-10 lg:py-24">
-        <h2 class="mb-12 text-2xl font-bold text-center text-cyan-400">
+        <h2
+          class="mb-12 text-2xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600"
+        >
           Contact Me
         </h2>
         <form
@@ -371,7 +358,7 @@
         </form>
       </section>
     </main>
-    <footer class="p-2 bg-cyan-400">
+    <footer class="p-2 bg-gradient-to-r from-cyan-400 to bg-blue-600">
       <p class="text-center text-slate-800">
         Created with ❤️ by
         <span class="font-light text"><i>Kholid Irfangi</i></span>

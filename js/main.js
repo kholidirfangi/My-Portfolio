@@ -33,7 +33,7 @@ btnContact.addEventListener('click', () => {
 const menu = document.querySelector('.menu');
 menu.addEventListener('click', () => {
   const menuMobile = document.querySelector('#menuMobile');
-
+  console.log('ok');
   menu.classList.add('hidden');
   menuMobile.classList.remove('-ms-72', 'md:-ms-[600px]');
   menuMobile.classList.add('ms-0');
@@ -92,6 +92,3 @@ AOS.init({
   duration: 400,
   once: true,
 });
-
-
-
